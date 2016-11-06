@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFF700C3-88C9-4E24-8B06-82444AF11726}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PersonnelManage</RootNamespace>
+    <AssemblyName>PersonnelManage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\testStyle\testStyle\bin\Debug\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2.2006.3.22.45.Fakes">
+      <HintPath>FakesAssemblies\IrisSkin2.2006.3.22.45.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common.cs" />
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssessManage\FrmSingleAssess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssessManage\FrmSingleAssess.Designer.cs">
+      <DependentUpon>FrmSingleAssess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssessManage\FrmInputAssessExample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssessManage\FrmInputAssessExample.Designer.cs">
+      <DependentUpon>FrmInputAssessExample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssessManage\FrmASEDetailOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssessManage\FrmASEDetailOption.Designer.cs">
+      <DependentUpon>FrmASEDetailOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssessManage\FrmAssessExampleDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssessManage\FrmAssessExampleDetail.Designer.cs">
+      <DependentUpon>FrmAssessExampleDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Secret.cs" />
+    <Compile Include="AssessManage\FrmAssessManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssessManage\FrmAssessManage.Designer.cs">
+      <DependentUpon>FrmAssessManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssessManage\FrmAddAssessExample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssessManage\FrmAddAssessExample.Designer.cs">
+      <DependentUpon>FrmAddAssessExample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartManage\FrmAddDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartManage\FrmAddDept.Designer.cs">
+      <DependentUpon>FrmAddDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmploryeeManage\FrmAddEmploryee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmploryeeManage\FrmAddEmploryee.Designer.cs">
+      <DependentUpon>FrmAddEmploryee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdmin.Designer.cs">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssessManage\FrmAssessExample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssessManage\FrmAssessExample.Designer.cs">
+      <DependentUpon>FrmAssessExample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartManage\FrmDepartManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartManage\FrmDepartManage.Designer.cs">
+      <DependentUpon>FrmDepartManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditPwd.Designer.cs">
+      <DependentUpon>FrmEditPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmploryeeManage\FrmEmploryeeManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmploryeeManage\FrmEmploryeeManage.Designer.cs">
+      <DependentUpon>FrmEmploryeeManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLock.Designer.cs">
+      <DependentUpon>FrmLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageManage\FrmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageManage\FrmMessageBox.Designer.cs">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageManage\FrmReceiveMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageManage\FrmReceiveMessage.Designer.cs">
+      <DependentUpon>FrmReceiveMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegister.Designer.cs">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageManage\FrmSendBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageManage\FrmSendBox.Designer.cs">
+      <DependentUpon>FrmSendBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageManage\FrmSendMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageManage\FrmSendMessage.Designer.cs">
+      <DependentUpon>FrmSendMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageManage\FrmMessageDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageManage\FrmMessageDetail.Designer.cs">
+      <DependentUpon>FrmMessageDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlHelper.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssessManage\FrmSingleAssess.resx">
+      <DependentUpon>FrmSingleAssess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssessManage\FrmInputAssessExample.resx">
+      <DependentUpon>FrmInputAssessExample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssessManage\FrmASEDetailOption.resx">
+      <DependentUpon>FrmASEDetailOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssessManage\FrmAssessExampleDetail.resx">
+      <DependentUpon>FrmAssessExampleDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmploryeeManage\FrmEmploryeeManage.resx">
+      <DependentUpon>FrmEmploryeeManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssessManage\FrmAssessManage.resx">
+      <DependentUpon>FrmAssessManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssessManage\FrmAddAssessExample.resx">
+      <DependentUpon>FrmAddAssessExample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartManage\FrmAddDept.resx">
+      <DependentUpon>FrmAddDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmploryeeManage\FrmAddEmploryee.resx">
+      <DependentUpon>FrmAddEmploryee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssessManage\FrmAssessExample.resx">
+      <DependentUpon>FrmAssessExample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartManage\FrmDepartManage.resx">
+      <DependentUpon>FrmDepartManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditPwd.resx">
+      <DependentUpon>FrmEditPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLock.resx">
+      <DependentUpon>FrmLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageManage\FrmMessageBox.resx">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageManage\FrmReceiveMessage.resx">
+      <DependentUpon>FrmReceiveMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegister.resx">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageManage\FrmSendBox.resx">
+      <DependentUpon>FrmSendBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageManage\FrmSendMessage.resx">
+      <DependentUpon>FrmSendMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageManage\FrmMessageDetail.resx">
+      <DependentUpon>FrmMessageDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
